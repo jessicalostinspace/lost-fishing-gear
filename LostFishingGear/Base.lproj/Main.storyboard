@@ -1,25 +1,166 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Js-Io-ciN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Search Bar????-->
+        <scene sceneID="15q-df-7AK">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vp2-4R-f2M" customClass="MapViewController" customModule="LostFishingGear" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="bfK-og-gN4"/>
+                        <viewControllerLayoutGuide type="bottom" id="n3j-k2-cAl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="MJG-zh-pHb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jov-JY-sNy">
+                                <rect key="frame" x="20" y="64" width="560" height="29"/>
+                                <segments>
+                                    <segment title="Lost Gear"/>
+                                    <segment title="Found Gear"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapFilterButtonPressed:" destination="vp2-4R-f2M" eventType="valueChanged" id="qki-Fc-9BQ"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="49g-ac-x8x">
+                                <rect key="frame" x="20" y="92" width="560" height="459"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jov-JY-sNy" firstAttribute="leading" secondItem="MJG-zh-pHb" secondAttribute="leadingMargin" id="6ec-og-nYW"/>
+                            <constraint firstItem="49g-ac-x8x" firstAttribute="top" secondItem="Jov-JY-sNy" secondAttribute="bottom" id="BKh-rn-S0i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="49g-ac-x8x" secondAttribute="trailing" id="EJM-YH-Q2O"/>
+                            <constraint firstItem="n3j-k2-cAl" firstAttribute="top" secondItem="49g-ac-x8x" secondAttribute="bottom" id="ScD-IM-PrQ"/>
+                            <constraint firstItem="49g-ac-x8x" firstAttribute="leading" secondItem="MJG-zh-pHb" secondAttribute="leadingMargin" id="Ypg-hL-1O2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jov-JY-sNy" secondAttribute="trailing" id="mQU-Nc-2ac"/>
+                            <constraint firstItem="Jov-JY-sNy" firstAttribute="top" secondItem="bfK-og-gN4" secondAttribute="bottom" id="rjS-Zp-v3p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search Bar????" id="W95-Th-Fyi"/>
+                    <connections>
+                        <outlet property="mapView" destination="49g-ac-x8x" id="c3J-3I-Ynv"/>
+                        <outlet property="segmentedControl" destination="Jov-JY-sNy" id="85S-J9-jpL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1WO-C9-vDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="376"/>
+        </scene>
+        <!--Lost and Found-->
+        <scene sceneID="g9M-3P-Ez0">
+            <objects>
+                <viewController id="opv-1g-Gos" customClass="LostOrFoundViewController" customModule="LostFishingGear" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GQz-ta-vTd"/>
+                        <viewControllerLayoutGuide type="bottom" id="ic9-Ky-A5x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6G6-jr-aVc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HAVE YOU..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKc-yS-0l0">
+                                <rect key="frame" x="20" y="28" width="560" height="116"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prw-4m-PDj">
+                                <rect key="frame" x="169" y="197" width="263" height="85"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <state key="normal" title="LOST GEAR?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lostButtonPressed:" destination="opv-1g-Gos" eventType="touchUpInside" id="GB5-dE-Gpp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWU-NW-0rN">
+                                <rect key="frame" x="169" y="335" width="263" height="81"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <state key="normal" title="FOUND GEAR?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="foundButtonPressed:" destination="opv-1g-Gos" eventType="touchUpInside" id="Z9Y-WE-pa3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29593805400000001" green="0.546711485" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lost and Found" image="Fishing-64" id="mT9-1f-dc1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4V-9G-6XQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="-284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bQM-OD-Ov8">
+            <objects>
+                <viewController id="fRe-Tn-5Ki" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="99g-Bi-gat"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pxd-qZ-h2F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U2E-Cb-2qa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiK-6E-8en" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1100" y="-284"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="itZ-OW-J7w">
+            <objects>
+                <tabBarController id="9Js-Io-ciN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="2oq-BW-9S3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.63419281025268259" green="0.94121001501642865" blue="1" alpha="0.60595366379310345" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="opv-1g-Gos" kind="relationship" relationship="viewControllers" id="Bge-24-1lm"/>
+                        <segue destination="KhQ-QP-QlK" kind="relationship" relationship="viewControllers" id="Ivk-Uo-nrX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wl9-qj-sby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="48"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Jv2-kP-nZQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KhQ-QP-QlK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="Map Marker-50" id="XM0-lh-KLt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="483-Ma-och">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vp2-4R-f2M" kind="relationship" relationship="rootViewController" id="dxa-0K-6Ui"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3h-j8-Pru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="376"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Fishing-64" width="32" height="32"/>
+        <image name="Map Marker-50" width="25" height="25"/>
+    </resources>
 </document>
