@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCBA62EC1CCBF4A100753004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */; };
+		FCBA62EE1CCBF4A100753004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA62ED1CCBF4A100753004 /* ViewController.swift */; };
+		FCBA62F11CCBF4A100753004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBA62EF1CCBF4A100753004 /* Main.storyboard */; };
+		FCBA62F41CCBF4A100753004 /* LostFishingGear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCBA62F21CCBF4A100753004 /* LostFishingGear.xcdatamodeld */; };
+		FCBA62F61CCBF4A100753004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBA62F51CCBF4A100753004 /* Assets.xcassets */; };
+		FCBA62F91CCBF4A100753004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBA62F71CCBF4A100753004 /* LaunchScreen.storyboard */; };
+		FCBA63041CCBF4A100753004 /* LostFishingGearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA63031CCBF4A100753004 /* LostFishingGearTests.swift */; };
+		FCBA630F1CCBF4A100753004 /* LostFishingGearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA630E1CCBF4A100753004 /* LostFishingGearUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCBA63001CCBF4A100753004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCBA62E01CCBF4A100753004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCBA62E71CCBF4A100753004;
+			remoteInfo = LostFishingGear;
+		};
+		FCBA630B1CCBF4A100753004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCBA62E01CCBF4A100753004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCBA62E71CCBF4A100753004;
+			remoteInfo = LostFishingGear;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCBA62E81CCBF4A100753004 /* LostFishingGear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostFishingGear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCBA62ED1CCBF4A100753004 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCBA62F01CCBF4A100753004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCBA62F31CCBF4A100753004 /* LostFishingGear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LostFishingGear.xcdatamodel; sourceTree = "<group>"; };
+		FCBA62F51CCBF4A100753004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCBA62F81CCBF4A100753004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCBA62FA1CCBF4A100753004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBA62FF1CCBF4A100753004 /* LostFishingGearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostFishingGearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBA63031CCBF4A100753004 /* LostFishingGearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostFishingGearTests.swift; sourceTree = "<group>"; };
+		FCBA63051CCBF4A100753004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBA630A1CCBF4A100753004 /* LostFishingGearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostFishingGearUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBA630E1CCBF4A100753004 /* LostFishingGearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostFishingGearUITests.swift; sourceTree = "<group>"; };
+		FCBA63101CCBF4A100753004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCBA62E51CCBF4A100753004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBA62FC1CCBF4A100753004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBA63071CCBF4A100753004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCBA62DF1CCBF4A100753004 = {
+			isa = PBXGroup;
+			children = (
+				FCBA62EA1CCBF4A100753004 /* LostFishingGear */,
+				FCBA63021CCBF4A100753004 /* LostFishingGearTests */,
+				FCBA630D1CCBF4A100753004 /* LostFishingGearUITests */,
+				FCBA62E91CCBF4A100753004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCBA62E91CCBF4A100753004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA62E81CCBF4A100753004 /* LostFishingGear.app */,
+				FCBA62FF1CCBF4A100753004 /* LostFishingGearTests.xctest */,
+				FCBA630A1CCBF4A100753004 /* LostFishingGearUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCBA62EA1CCBF4A100753004 /* LostFishingGear */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */,
+				FCBA62ED1CCBF4A100753004 /* ViewController.swift */,
+				FCBA62EF1CCBF4A100753004 /* Main.storyboard */,
+				FCBA62F51CCBF4A100753004 /* Assets.xcassets */,
+				FCBA62F71CCBF4A100753004 /* LaunchScreen.storyboard */,
+				FCBA62FA1CCBF4A100753004 /* Info.plist */,
+				FCBA62F21CCBF4A100753004 /* LostFishingGear.xcdatamodeld */,
+			);
+			path = LostFishingGear;
+			sourceTree = "<group>";
+		};
+		FCBA63021CCBF4A100753004 /* LostFishingGearTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA63031CCBF4A100753004 /* LostFishingGearTests.swift */,
+				FCBA63051CCBF4A100753004 /* Info.plist */,
+			);
+			path = LostFishingGearTests;
+			sourceTree = "<group>";
+		};
+		FCBA630D1CCBF4A100753004 /* LostFishingGearUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA630E1CCBF4A100753004 /* LostFishingGearUITests.swift */,
+				FCBA63101CCBF4A100753004 /* Info.plist */,
+			);
+			path = LostFishingGearUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCBA62E71CCBF4A100753004 /* LostFishingGear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBA63131CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGear" */;
+			buildPhases = (
+				FCBA62E41CCBF4A100753004 /* Sources */,
+				FCBA62E51CCBF4A100753004 /* Frameworks */,
+				FCBA62E61CCBF4A100753004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LostFishingGear;
+			productName = LostFishingGear;
+			productReference = FCBA62E81CCBF4A100753004 /* LostFishingGear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCBA62FE1CCBF4A100753004 /* LostFishingGearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBA63161CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGearTests" */;
+			buildPhases = (
+				FCBA62FB1CCBF4A100753004 /* Sources */,
+				FCBA62FC1CCBF4A100753004 /* Frameworks */,
+				FCBA62FD1CCBF4A100753004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCBA63011CCBF4A100753004 /* PBXTargetDependency */,
+			);
+			name = LostFishingGearTests;
+			productName = LostFishingGearTests;
+			productReference = FCBA62FF1CCBF4A100753004 /* LostFishingGearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCBA63091CCBF4A100753004 /* LostFishingGearUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBA63191CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGearUITests" */;
+			buildPhases = (
+				FCBA63061CCBF4A100753004 /* Sources */,
+				FCBA63071CCBF4A100753004 /* Frameworks */,
+				FCBA63081CCBF4A100753004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCBA630C1CCBF4A100753004 /* PBXTargetDependency */,
+			);
+			name = LostFishingGearUITests;
+			productName = LostFishingGearUITests;
+			productReference = FCBA630A1CCBF4A100753004 /* LostFishingGearUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCBA62E01CCBF4A100753004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jessica Wilson";
+				TargetAttributes = {
+					FCBA62E71CCBF4A100753004 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					FCBA62FE1CCBF4A100753004 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FCBA62E71CCBF4A100753004;
+					};
+					FCBA63091CCBF4A100753004 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FCBA62E71CCBF4A100753004;
+					};
+				};
+			};
+			buildConfigurationList = FCBA62E31CCBF4A100753004 /* Build configuration list for PBXProject "LostFishingGear" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCBA62DF1CCBF4A100753004;
+			productRefGroup = FCBA62E91CCBF4A100753004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCBA62E71CCBF4A100753004 /* LostFishingGear */,
+				FCBA62FE1CCBF4A100753004 /* LostFishingGearTests */,
+				FCBA63091CCBF4A100753004 /* LostFishingGearUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCBA62E61CCBF4A100753004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBA62F91CCBF4A100753004 /* LaunchScreen.storyboard in Resources */,
+				FCBA62F61CCBF4A100753004 /* Assets.xcassets in Resources */,
+				FCBA62F11CCBF4A100753004 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBA62FD1CCBF4A100753004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBA63081CCBF4A100753004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCBA62E41CCBF4A100753004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBA62EE1CCBF4A100753004 /* ViewController.swift in Sources */,
+				FCBA62EC1CCBF4A100753004 /* AppDelegate.swift in Sources */,
+				FCBA62F41CCBF4A100753004 /* LostFishingGear.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBA62FB1CCBF4A100753004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBA63041CCBF4A100753004 /* LostFishingGearTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBA63061CCBF4A100753004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBA630F1CCBF4A100753004 /* LostFishingGearUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCBA63011CCBF4A100753004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCBA62E71CCBF4A100753004 /* LostFishingGear */;
+			targetProxy = FCBA63001CCBF4A100753004 /* PBXContainerItemProxy */;
+		};
+		FCBA630C1CCBF4A100753004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCBA62E71CCBF4A100753004 /* LostFishingGear */;
+			targetProxy = FCBA630B1CCBF4A100753004 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCBA62EF1CCBF4A100753004 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCBA62F01CCBF4A100753004 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCBA62F71CCBF4A100753004 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCBA62F81CCBF4A100753004 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCBA63111CCBF4A100753004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCBA63121CCBF4A100753004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCBA63141CCBF4A100753004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LostFishingGear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.LostFishingGear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCBA63151CCBF4A100753004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LostFishingGear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.LostFishingGear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FCBA63171CCBF4A100753004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LostFishingGearTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.LostFishingGearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LostFishingGear.app/LostFishingGear";
+			};
+			name = Debug;
+		};
+		FCBA63181CCBF4A100753004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LostFishingGearTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.LostFishingGearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LostFishingGear.app/LostFishingGear";
+			};
+			name = Release;
+		};
+		FCBA631A1CCBF4A100753004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LostFishingGearUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.LostFishingGearUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LostFishingGear;
+			};
+			name = Debug;
+		};
+		FCBA631B1CCBF4A100753004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LostFishingGearUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.LostFishingGearUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LostFishingGear;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCBA62E31CCBF4A100753004 /* Build configuration list for PBXProject "LostFishingGear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBA63111CCBF4A100753004 /* Debug */,
+				FCBA63121CCBF4A100753004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBA63131CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBA63141CCBF4A100753004 /* Debug */,
+				FCBA63151CCBF4A100753004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCBA63161CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBA63171CCBF4A100753004 /* Debug */,
+				FCBA63181CCBF4A100753004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCBA63191CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGearUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBA631A1CCBF4A100753004 /* Debug */,
+				FCBA631B1CCBF4A100753004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FCBA62F21CCBF4A100753004 /* LostFishingGear.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FCBA62F31CCBF4A100753004 /* LostFishingGear.xcdatamodel */,
+			);
+			currentVersion = FCBA62F31CCBF4A100753004 /* LostFishingGear.xcdatamodel */;
+			path = LostFishingGear.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FCBA62E01CCBF4A100753004 /* Project object */;
+}
