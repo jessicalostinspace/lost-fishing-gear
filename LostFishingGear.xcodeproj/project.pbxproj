@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56C1F3165D9DD9677A9BF32D /* Pods_LostFishingGearUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3BC3E5F123F4DC98A68B08 /* Pods_LostFishingGearUITests.framework */; };
+		634C82624F1AD0CAD1B84762 /* Pods_LostFishingGear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99675FBF858CDA977307530 /* Pods_LostFishingGear.framework */; };
+		E9F35346E6311FEE628878FD /* Pods_LostFishingGearTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D4E9FA0D2D58347CF2E89 /* Pods_LostFishingGearTests.framework */; };
 		FC0D595F1CCC0A8A008565B5 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D595E1CCC0A8A008565B5 /* LocationViewController.swift */; };
 		FC0D59611CCC17A6008565B5 /* goBackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59601CCC17A6008565B5 /* goBackProtocol.swift */; };
 		FC0D59631CCC1C19008565B5 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59621CCC1C19008565B5 /* GearViewController.swift */; };
@@ -41,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03A665B30BA9FA3B42847419 /* Pods-LostFishingGear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostFishingGear.release.xcconfig"; path = "Pods/Target Support Files/Pods-LostFishingGear/Pods-LostFishingGear.release.xcconfig"; sourceTree = "<group>"; };
+		079D4E9FA0D2D58347CF2E89 /* Pods_LostFishingGearTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LostFishingGearTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C8599268FF0AC01822F4E7 /* Pods-LostFishingGearUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostFishingGearUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LostFishingGearUITests/Pods-LostFishingGearUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9600818440B435B4AC5C0112 /* Pods-LostFishingGear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostFishingGear.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LostFishingGear/Pods-LostFishingGear.debug.xcconfig"; sourceTree = "<group>"; };
+		A1AC509EBD9D4CE534B0D502 /* Pods-LostFishingGearTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostFishingGearTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LostFishingGearTests/Pods-LostFishingGearTests.release.xcconfig"; sourceTree = "<group>"; };
+		C99675FBF858CDA977307530 /* Pods_LostFishingGear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LostFishingGear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC42CA60DA3A949E5EE9A526 /* Pods-LostFishingGearTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostFishingGearTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LostFishingGearTests/Pods-LostFishingGearTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D48F2B579E4F3959F25312B2 /* Pods-LostFishingGearUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostFishingGearUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LostFishingGearUITests/Pods-LostFishingGearUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB3BC3E5F123F4DC98A68B08 /* Pods_LostFishingGearUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LostFishingGearUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0D595E1CCC0A8A008565B5 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		FC0D59601CCC17A6008565B5 /* goBackProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goBackProtocol.swift; sourceTree = "<group>"; };
 		FC0D59621CCC1C19008565B5 /* GearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634C82624F1AD0CAD1B84762 /* Pods_LostFishingGear.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F35346E6311FEE628878FD /* Pods_LostFishingGearTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C1F3165D9DD9677A9BF32D /* Pods_LostFishingGearUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C0C733F2AC6B30999F09E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9600818440B435B4AC5C0112 /* Pods-LostFishingGear.debug.xcconfig */,
+				03A665B30BA9FA3B42847419 /* Pods-LostFishingGear.release.xcconfig */,
+				CC42CA60DA3A949E5EE9A526 /* Pods-LostFishingGearTests.debug.xcconfig */,
+				A1AC509EBD9D4CE534B0D502 /* Pods-LostFishingGearTests.release.xcconfig */,
+				53C8599268FF0AC01822F4E7 /* Pods-LostFishingGearUITests.debug.xcconfig */,
+				D48F2B579E4F3959F25312B2 /* Pods-LostFishingGearUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		519DA6ED181D9C1563D0460B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99675FBF858CDA977307530 /* Pods_LostFishingGear.framework */,
+				079D4E9FA0D2D58347CF2E89 /* Pods_LostFishingGearTests.framework */,
+				DB3BC3E5F123F4DC98A68B08 /* Pods_LostFishingGearUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC0D59661CCC33BB008565B5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +145,8 @@
 				FCBA63021CCBF4A100753004 /* LostFishingGearTests */,
 				FCBA630D1CCBF4A100753004 /* LostFishingGearUITests */,
 				FCBA62E91CCBF4A100753004 /* Products */,
+				28C0C733F2AC6B30999F09E6 /* Pods */,
+				519DA6ED181D9C1563D0460B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCBA63131CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGear" */;
 			buildPhases = (
+				A1423A8279D5C02769DF1A11 /* 📦 Check Pods Manifest.lock */,
 				FCBA62E41CCBF4A100753004 /* Sources */,
 				FCBA62E51CCBF4A100753004 /* Frameworks */,
 				FCBA62E61CCBF4A100753004 /* Resources */,
+				CEE0B8A73E26C43C44CCDAB2 /* 📦 Embed Pods Frameworks */,
+				3E9912637AFD0CA1AD5272CE /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCBA63161CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGearTests" */;
 			buildPhases = (
+				51C3FE183E1E28074B9E4393 /* 📦 Check Pods Manifest.lock */,
 				FCBA62FB1CCBF4A100753004 /* Sources */,
 				FCBA62FC1CCBF4A100753004 /* Frameworks */,
 				FCBA62FD1CCBF4A100753004 /* Resources */,
+				7695E7F5658F98B5C7DD45CA /* 📦 Embed Pods Frameworks */,
+				E8EDF66223C973C195D78FA0 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCBA63191CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGearUITests" */;
 			buildPhases = (
+				2DB468BAD54E8E49B7EB123A /* 📦 Check Pods Manifest.lock */,
 				FCBA63061CCBF4A100753004 /* Sources */,
 				FCBA63071CCBF4A100753004 /* Frameworks */,
 				FCBA63081CCBF4A100753004 /* Resources */,
+				67DA68DF61A5D4FADE18EF1F /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +327,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DB468BAD54E8E49B7EB123A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E9912637AFD0CA1AD5272CE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LostFishingGear/Pods-LostFishingGear-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51C3FE183E1E28074B9E4393 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67DA68DF61A5D4FADE18EF1F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LostFishingGearUITests/Pods-LostFishingGearUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7695E7F5658F98B5C7DD45CA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LostFishingGearTests/Pods-LostFishingGearTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1423A8279D5C02769DF1A11 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE0B8A73E26C43C44CCDAB2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LostFishingGear/Pods-LostFishingGear-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8EDF66223C973C195D78FA0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LostFishingGearTests/Pods-LostFishingGearTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FCBA62E41CCBF4A100753004 /* Sources */ = {
@@ -435,6 +606,7 @@
 		};
 		FCBA63141CCBF4A100753004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9600818440B435B4AC5C0112 /* Pods-LostFishingGear.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LostFishingGear/Info.plist;
@@ -446,6 +618,7 @@
 		};
 		FCBA63151CCBF4A100753004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A665B30BA9FA3B42847419 /* Pods-LostFishingGear.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LostFishingGear/Info.plist;
@@ -457,6 +630,7 @@
 		};
 		FCBA63171CCBF4A100753004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC42CA60DA3A949E5EE9A526 /* Pods-LostFishingGearTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LostFishingGearTests/Info.plist;
@@ -469,6 +643,7 @@
 		};
 		FCBA63181CCBF4A100753004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1AC509EBD9D4CE534B0D502 /* Pods-LostFishingGearTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LostFishingGearTests/Info.plist;
@@ -481,6 +656,7 @@
 		};
 		FCBA631A1CCBF4A100753004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C8599268FF0AC01822F4E7 /* Pods-LostFishingGearUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = LostFishingGearUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -492,6 +668,7 @@
 		};
 		FCBA631B1CCBF4A100753004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D48F2B579E4F3959F25312B2 /* Pods-LostFishingGearUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = LostFishingGearUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

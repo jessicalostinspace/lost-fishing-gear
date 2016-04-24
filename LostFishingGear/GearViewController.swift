@@ -41,7 +41,7 @@ class GearViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
       let cell = collectionView.dequeueReusableCellWithReuseIdentifier("GearTypePhotoCell", forIndexPath: indexPath) as! GearTypeCollectionViewCell
         
-        cell.backgroundColor = UIColor.blackColor()
+//        cell.backgroundColor = UIColor.blackColor()
         
         let currImage = self.imageData[indexPath.row]
 

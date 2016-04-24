@@ -13,8 +13,9 @@ class DescriptionViewController: UIViewController, UIPickerViewDelegate, UIPicke
     var gearType: String?
     @IBOutlet weak var gearTypeLabel: UILabel!
     @IBOutlet weak var gearTypePicker: UIPickerView!
-    var pickerData = [String]()
+//    var pickerData = [String]()
     var gearTypePickerData: String = ""
+    var pickerData = ["Cast nets", "Falling gear (not specified)"]
     
     @IBAction func backButtonPressed(sender: UIBarButtonItem) {
         goBack()
