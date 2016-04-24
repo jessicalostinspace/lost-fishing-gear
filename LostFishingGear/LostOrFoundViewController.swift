@@ -8,18 +8,25 @@
 
 import UIKit
 
-class LostOrFoundViewController: UIViewController {
+class LostOrFoundViewController: UIViewController, backButtonProtocol {
+    
+    var lost = false
+    var found = false
 
     @IBAction func lostButtonPressed(sender: UIButton) {
+        lost = true
+        performSegueWithIdentifier("gearToLocationSegue", sender: nil)
     }
     
     @IBAction func foundButtonPressed(sender: UIButton) {
+        found = true
+        performSegueWithIdentifier("gearToLocationSegue", sender: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,14 +35,21 @@ class LostOrFoundViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        let navController = segue.destinationViewController as! UINavigationController
+        let controller = navController.topViewController as! LocationViewController
+        
+        controller.lost = lost
+        controller.found = found
+        
     }
-    */
+    
+    func goBack(){
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
