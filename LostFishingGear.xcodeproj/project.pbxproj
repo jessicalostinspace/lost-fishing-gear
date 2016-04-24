@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0D595F1CCC0A8A008565B5 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D595E1CCC0A8A008565B5 /* LocationViewController.swift */; };
+		FC0D59611CCC17A6008565B5 /* goBackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59601CCC17A6008565B5 /* goBackProtocol.swift */; };
+		FC0D59631CCC1C19008565B5 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59621CCC1C19008565B5 /* GearViewController.swift */; };
+		FC0D59651CCC307E008565B5 /* GearTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59641CCC307E008565B5 /* GearTypeCollectionViewCell.swift */; };
+		FC0D59681CCC4FCB008565B5 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59671CCC4FCB008565B5 /* DescriptionViewController.swift */; };
 		FCBA62EC1CCBF4A100753004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */; };
-		FCBA62EE1CCBF4A100753004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA62ED1CCBF4A100753004 /* ViewController.swift */; };
 		FCBA62F11CCBF4A100753004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBA62EF1CCBF4A100753004 /* Main.storyboard */; };
 		FCBA62F41CCBF4A100753004 /* LostFishingGear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCBA62F21CCBF4A100753004 /* LostFishingGear.xcdatamodeld */; };
 		FCBA62F61CCBF4A100753004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBA62F51CCBF4A100753004 /* Assets.xcassets */; };
 		FCBA62F91CCBF4A100753004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBA62F71CCBF4A100753004 /* LaunchScreen.storyboard */; };
 		FCBA63041CCBF4A100753004 /* LostFishingGearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA63031CCBF4A100753004 /* LostFishingGearTests.swift */; };
 		FCBA630F1CCBF4A100753004 /* LostFishingGearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA630E1CCBF4A100753004 /* LostFishingGearUITests.swift */; };
+		FCBA631D1CCBF5F900753004 /* LostOrFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA631C1CCBF5F900753004 /* LostOrFoundViewController.swift */; };
+		FCBA631F1CCBF66500753004 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA631E1CCBF66500753004 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC0D595E1CCC0A8A008565B5 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		FC0D59601CCC17A6008565B5 /* goBackProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goBackProtocol.swift; sourceTree = "<group>"; };
+		FC0D59621CCC1C19008565B5 /* GearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearViewController.swift; sourceTree = "<group>"; };
+		FC0D59641CCC307E008565B5 /* GearTypeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC0D59671CCC4FCB008565B5 /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		FCBA62E81CCBF4A100753004 /* LostFishingGear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostFishingGear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCBA62ED1CCBF4A100753004 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCBA62F01CCBF4A100753004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCBA62F31CCBF4A100753004 /* LostFishingGear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LostFishingGear.xcdatamodel; sourceTree = "<group>"; };
 		FCBA62F51CCBF4A100753004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		FCBA630A1CCBF4A100753004 /* LostFishingGearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostFishingGearUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBA630E1CCBF4A100753004 /* LostFishingGearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostFishingGearUITests.swift; sourceTree = "<group>"; };
 		FCBA63101CCBF4A100753004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBA631C1CCBF5F900753004 /* LostOrFoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LostOrFoundViewController.swift; sourceTree = "<group>"; };
+		FCBA631E1CCBF66500753004 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC0D59661CCC33BB008565B5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA631C1CCBF5F900753004 /* LostOrFoundViewController.swift */,
+				FC0D595E1CCC0A8A008565B5 /* LocationViewController.swift */,
+				FC0D59621CCC1C19008565B5 /* GearViewController.swift */,
+				FCBA631E1CCBF66500753004 /* MapViewController.swift */,
+				FC0D59671CCC4FCB008565B5 /* DescriptionViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		FCBA62DF1CCBF4A100753004 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +123,11 @@
 		FCBA62EA1CCBF4A100753004 /* LostFishingGear */ = {
 			isa = PBXGroup;
 			children = (
-				FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */,
-				FCBA62ED1CCBF4A100753004 /* ViewController.swift */,
+				FC0D59661CCC33BB008565B5 /* ViewControllers */,
 				FCBA62EF1CCBF4A100753004 /* Main.storyboard */,
+				FC0D59641CCC307E008565B5 /* GearTypeCollectionViewCell.swift */,
+				FC0D59601CCC17A6008565B5 /* goBackProtocol.swift */,
+				FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */,
 				FCBA62F51CCBF4A100753004 /* Assets.xcassets */,
 				FCBA62F71CCBF4A100753004 /* LaunchScreen.storyboard */,
 				FCBA62FA1CCBF4A100753004 /* Info.plist */,
@@ -259,8 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCBA62EE1CCBF4A100753004 /* ViewController.swift in Sources */,
+				FC0D595F1CCC0A8A008565B5 /* LocationViewController.swift in Sources */,
+				FCBA631D1CCBF5F900753004 /* LostOrFoundViewController.swift in Sources */,
+				FC0D59611CCC17A6008565B5 /* goBackProtocol.swift in Sources */,
 				FCBA62EC1CCBF4A100753004 /* AppDelegate.swift in Sources */,
+				FC0D59631CCC1C19008565B5 /* GearViewController.swift in Sources */,
+				FCBA631F1CCBF66500753004 /* MapViewController.swift in Sources */,
+				FC0D59681CCC4FCB008565B5 /* DescriptionViewController.swift in Sources */,
+				FC0D59651CCC307E008565B5 /* GearTypeCollectionViewCell.swift in Sources */,
 				FCBA62F41CCBF4A100753004 /* LostFishingGear.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +520,7 @@
 				FCBA63151CCBF4A100753004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCBA63161CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGearTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +529,7 @@
 				FCBA63181CCBF4A100753004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCBA63191CCBF4A100753004 /* Build configuration list for PBXNativeTarget "LostFishingGearUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +538,7 @@
 				FCBA631B1CCBF4A100753004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

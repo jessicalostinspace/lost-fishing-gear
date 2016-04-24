@@ -10,11 +10,14 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
+    let locationMgr = CLLocationManager()
+    var mapRegion: MKCoordinateRegion?
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     @IBAction func mapFilterButtonPressed(sender: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
@@ -31,7 +34,11 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        locationMgr.delegate = self
+        locationMgr.requestWhenInUseAuthorization()
+        locationMgr.desiredAccuracy = kCLLocationAccuracyBest
+        locationMgr.startUpdatingLocation()
+        
     }
 
     override func didReceiveMemoryWarning() {

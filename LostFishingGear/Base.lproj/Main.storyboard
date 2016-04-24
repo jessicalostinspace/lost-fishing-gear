@@ -196,29 +196,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TYPE OF GEAR?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypD-qw-g3g">
-                                <rect key="frame" x="20" y="89" width="560" height="74"/>
+                                <rect key="frame" x="20" y="72" width="560" height="74"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XXe-Fl-Zhw">
-                                <rect key="frame" x="20" y="192" width="560" height="388"/>
+                                <rect key="frame" x="20" y="154" width="560" height="426"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Ny-Ba-lh7">
-                                    <size key="itemSize" width="109" height="112"/>
+                                    <size key="itemSize" width="159" height="163"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GearTypePhotoCell" id="QP8-D3-K3o" customClass="GearTypeCollectionViewCell" customModule="LostFishingGear" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="109" height="112"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="163"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="109" height="112"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="159" height="163"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUw-ri-9Nh">
-                                                    <rect key="frame" x="8" y="8" width="93" height="96"/>
+                                                    <rect key="frame" x="8" y="8" width="143" height="147"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -233,15 +233,83 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="2fw-Vo-8Mb">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Hwy-Mr-oA6"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Hwy-Mr-oA6">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="0sc-34-thC" id="CC2-GL-spB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="XXe-Fl-Zhw" id="Fba-2o-6Lg"/>
+                        <segue destination="xlI-z7-aXS" kind="presentation" identifier="gearTypeToDescriptionSegue" id="OsZ-Wx-MsW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZy-6o-66H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3147" y="-284"/>
+        </scene>
+        <!--Description View Controller-->
+        <scene sceneID="iK0-Lj-m52">
+            <objects>
+                <viewController id="ia2-ZD-Lgd" customClass="DescriptionViewController" customModule="LostFishingGear" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8gB-R6-QTe"/>
+                        <viewControllerLayoutGuide type="bottom" id="aok-Xh-rUo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x3H-up-1HM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQG-fw-Oku">
+                                <rect key="frame" x="20" y="78" width="560" height="74"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many strands on net?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9W8-fL-hhz">
+                                <rect key="frame" x="20" y="512" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gear Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjT-Gu-ce6">
+                                <rect key="frame" x="20" y="165" width="560" height="36"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0z-SE-LRS">
+                                <rect key="frame" x="20" y="249" width="560" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gear Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzW-NZ-Pd3">
+                                <rect key="frame" x="20" y="209" width="560" height="32"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additional Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELO-by-Emd">
+                                <rect key="frame" x="20" y="472" width="560" height="32"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m7y-TD-XCa">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="LGI-pL-haV">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="ia2-ZD-Lgd" id="Mvy-e1-Ahz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gearTypeLabel" destination="DjT-Gu-ce6" id="2z1-hz-FYx"/>
+                        <outlet property="gearTypePicker" destination="z0z-SE-LRS" id="df9-7o-hym"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTy-JP-pV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4534" y="-284"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="itZ-OW-J7w">
@@ -316,6 +384,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVR-9W-j4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2461" y="-284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kBk-PG-xSd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xlI-z7-aXS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cyb-hO-kvf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ia2-ZD-Lgd" kind="relationship" relationship="rootViewController" id="HJO-9s-oOx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vd-al-Tfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3839" y="-284"/>
         </scene>
     </scenes>
     <resources>

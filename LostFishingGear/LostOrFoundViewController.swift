@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LostOrFoundViewController: UIViewController, backButtonProtocol {
+class LostOrFoundViewController: UIViewController, goBackProtocol {
     
     var lost = false
     var found = false

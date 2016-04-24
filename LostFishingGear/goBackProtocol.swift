@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol backButtonProtocol: class{
+protocol goBackProtocol: class{
     
     func goBack()
 }

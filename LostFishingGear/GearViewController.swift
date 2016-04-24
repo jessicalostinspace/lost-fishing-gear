@@ -8,20 +8,25 @@
 
 import UIKit
 
-class GearViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class GearViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, goBackProtocol {
     
     var imageData: [String] = [String]()
-//    var imageCounter: Int = 0
+    var gearType: String = ""
+    var delegate: goBackProtocol?
 
     @IBOutlet weak var collectionView: UICollectionView!
 
+    @IBAction func backButtonPressed(sender: UIBarButtonItem) {
+        goBack()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        imageData = ["cast_nets", "dredge", "falling_gear", "fishing_pole", "fyke_nets", "harpoons", "lift_net", "harpoons", "long_line", "pot_traps", "seine-net", "stow_nets", "trawl", "miscellaneous"]
+        imageData = ["Cast Net", "Dredge", "Falling Gear", "Fishing Pole", "Fyke Net", "Lift Net", "Harpoon", "Long Line", "Pot Trap", "Seine Net", "Stow Net", "Trawl", "Miscellaneous"]
     }
     
     // MARK: Collection View Delegate Methods
@@ -45,6 +50,14 @@ class GearViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return cell
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        gearType = imageData[indexPath.row]
+
+        performSegueWithIdentifier("gearTypeToDescriptionSegue", sender: indexPath)
+        
+    }
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -55,15 +68,20 @@ class GearViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let navController = segue.destinationViewController as! UINavigationController
+        let controller = navController.topViewController as! DescriptionViewController
+        
+        controller.gearType = gearType
+
     }
-    */
+    
+    func goBack(){
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
 
 }

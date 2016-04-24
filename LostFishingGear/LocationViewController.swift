@@ -12,7 +12,7 @@ class LocationViewController: UIViewController {
 
     var lost: Bool?
     var found: Bool?
-    var delegate: backButtonProtocol?
+    var delegate: goBackProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class LocationViewController: UIViewController {
     }
 
     @IBAction func backButtonPressed(sender: UIBarButtonItem) {
-        delegate?.goBack()
+        goBack()
     }
     
     @IBAction func latitudeTextField(sender: UITextField) {
@@ -64,15 +64,15 @@ class LocationViewController: UIViewController {
     }
     
 
-    
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
     }
-    */
+    
+    func goBack(){
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
 
 }
