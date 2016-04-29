@@ -1,45 +1,42 @@
 //
-//  DescriptionViewController.swift
+//  StrandsViewController.swift
 //  LostFishingGear
 //
-//  Created by Jessica Wilson on 4/23/16.
+//  Created by Jessica Wilson on 4/24/16.
 //  Copyright © 2016 Jessica Wilson. All rights reserved.
 //
 
 import UIKit
 
-class DescriptionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+class StrandsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     var gearType: String?
-    @IBOutlet weak var gearTypeLabel: UILabel!
-    @IBOutlet weak var gearTypePicker: UIPickerView!
-    var pickerData = [String]()
-    var gearTypePickerData: String = ""
+    @IBOutlet weak var pickerView: UIPickerView!
+    let numberStrands = ["0", "1", "2", "3", "4", "5", "6"]
+    var numberStrandsPickerData: String = ""
     
     @IBAction func backButtonPressed(sender: UIBarButtonItem) {
         goBack()
     }
     
     @IBAction func submitButtonPressed(sender: UIButton) {
-        
-        //save to database?
-        performSegueWithIdentifier("descriptionToStrandsSegue", sender: self)
+        performSegueWithIdentifier("strandsToColorSegue", sender: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.gearTypePicker.delegate = self
-        self.gearTypePicker.dataSource = self
         
-        pickerData = ["Cast nets", "Falling gear (not specified)"]
-        gearTypeLabel.text = gearType!
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     //MARK: UIPickerView Delegate functions
     
@@ -50,38 +47,41 @@ class DescriptionViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     // returns the # of rows in each component..
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+        return numberStrands.count
     }
     
     
     // The data to return for the row and component (column) that's being passed in
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        print(String(pickerData[row]))
-        return String(pickerData[row])
+        print(String(numberStrands[row]))
+        return String(numberStrands[row])
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        gearTypePickerData = pickerData[row]
+        numberStrandsPickerData = numberStrands[row]
     }
     
     func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        let titleData = pickerData[row]
-        var myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Futura", size: 15.0)!,NSForegroundColorAttributeName:UIColor.whiteColor()])
+        let titleData = numberStrands[row]
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Futura", size: 60.0)!,NSForegroundColorAttributeName:UIColor.whiteColor()])
         return myTitle
     }
+
+
 
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        let navController = segue.destinationViewController as! UINavigationController
-        let controller = navController.topViewController as! StrandsViewController
-        
-        controller.gearType = gearType
-        
-    }
 
+        let navController = segue.destinationViewController as! UINavigationController
+        let controller = navController.topViewController as! ColorViewController
+        
+        controller.numberStrands = numberStrandsPickerData
+    }
+    
+    
     func goBack(){
         dismissViewControllerAnimated(true, completion: nil)
     }
+
 }

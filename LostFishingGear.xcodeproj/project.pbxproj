@@ -15,6 +15,11 @@
 		FC0D59631CCC1C19008565B5 /* GearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59621CCC1C19008565B5 /* GearViewController.swift */; };
 		FC0D59651CCC307E008565B5 /* GearTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59641CCC307E008565B5 /* GearTypeCollectionViewCell.swift */; };
 		FC0D59681CCC4FCB008565B5 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59671CCC4FCB008565B5 /* DescriptionViewController.swift */; };
+		FC0D596A1CCDA8B4008565B5 /* StrandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59691CCDA8B4008565B5 /* StrandsViewController.swift */; };
+		FC0D596C1CCDBB66008565B5 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D596B1CCDBB66008565B5 /* ColorViewController.swift */; };
+		FC0D596E1CCDC849008565B5 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D596D1CCDC849008565B5 /* ColorCollectionViewCell.swift */; };
+		FC0D59701CCE9D4B008565B5 /* AddInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D596F1CCE9D4B008565B5 /* AddInfoViewController.swift */; };
+		FC0D59721CCE9DD5008565B5 /* WildlifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D59711CCE9DD5008565B5 /* WildlifeViewController.swift */; };
 		FCBA62EC1CCBF4A100753004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */; };
 		FCBA62F11CCBF4A100753004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBA62EF1CCBF4A100753004 /* Main.storyboard */; };
 		FCBA62F41CCBF4A100753004 /* LostFishingGear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCBA62F21CCBF4A100753004 /* LostFishingGear.xcdatamodeld */; };
@@ -58,6 +63,11 @@
 		FC0D59621CCC1C19008565B5 /* GearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearViewController.swift; sourceTree = "<group>"; };
 		FC0D59641CCC307E008565B5 /* GearTypeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC0D59671CCC4FCB008565B5 /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		FC0D59691CCDA8B4008565B5 /* StrandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrandsViewController.swift; sourceTree = "<group>"; };
+		FC0D596B1CCDBB66008565B5 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		FC0D596D1CCDC849008565B5 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC0D596F1CCE9D4B008565B5 /* AddInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInfoViewController.swift; sourceTree = "<group>"; };
+		FC0D59711CCE9DD5008565B5 /* WildlifeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WildlifeViewController.swift; sourceTree = "<group>"; };
 		FCBA62E81CCBF4A100753004 /* LostFishingGear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostFishingGear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCBA62F01CCBF4A100753004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,11 +139,15 @@
 		FC0D59661CCC33BB008565B5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FCBA631E1CCBF66500753004 /* MapViewController.swift */,
 				FCBA631C1CCBF5F900753004 /* LostOrFoundViewController.swift */,
 				FC0D595E1CCC0A8A008565B5 /* LocationViewController.swift */,
 				FC0D59621CCC1C19008565B5 /* GearViewController.swift */,
-				FCBA631E1CCBF66500753004 /* MapViewController.swift */,
 				FC0D59671CCC4FCB008565B5 /* DescriptionViewController.swift */,
+				FC0D59691CCDA8B4008565B5 /* StrandsViewController.swift */,
+				FC0D596B1CCDBB66008565B5 /* ColorViewController.swift */,
+				FC0D596F1CCE9D4B008565B5 /* AddInfoViewController.swift */,
+				FC0D59711CCE9DD5008565B5 /* WildlifeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +180,7 @@
 				FC0D59661CCC33BB008565B5 /* ViewControllers */,
 				FCBA62EF1CCBF4A100753004 /* Main.storyboard */,
 				FC0D59641CCC307E008565B5 /* GearTypeCollectionViewCell.swift */,
+				FC0D596D1CCDC849008565B5 /* ColorCollectionViewCell.swift */,
 				FC0D59601CCC17A6008565B5 /* goBackProtocol.swift */,
 				FCBA62EB1CCBF4A100753004 /* AppDelegate.swift */,
 				FCBA62F51CCBF4A100753004 /* Assets.xcassets */,
@@ -458,12 +473,17 @@
 			files = (
 				FC0D595F1CCC0A8A008565B5 /* LocationViewController.swift in Sources */,
 				FCBA631D1CCBF5F900753004 /* LostOrFoundViewController.swift in Sources */,
+				FC0D59721CCE9DD5008565B5 /* WildlifeViewController.swift in Sources */,
 				FC0D59611CCC17A6008565B5 /* goBackProtocol.swift in Sources */,
 				FCBA62EC1CCBF4A100753004 /* AppDelegate.swift in Sources */,
+				FC0D596A1CCDA8B4008565B5 /* StrandsViewController.swift in Sources */,
 				FC0D59631CCC1C19008565B5 /* GearViewController.swift in Sources */,
+				FC0D596E1CCDC849008565B5 /* ColorCollectionViewCell.swift in Sources */,
+				FC0D59701CCE9D4B008565B5 /* AddInfoViewController.swift in Sources */,
 				FCBA631F1CCBF66500753004 /* MapViewController.swift in Sources */,
 				FC0D59681CCC4FCB008565B5 /* DescriptionViewController.swift in Sources */,
 				FC0D59651CCC307E008565B5 /* GearTypeCollectionViewCell.swift in Sources */,
+				FC0D596C1CCDBB66008565B5 /* ColorViewController.swift in Sources */,
 				FCBA62F41CCBF4A100753004 /* LostFishingGear.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

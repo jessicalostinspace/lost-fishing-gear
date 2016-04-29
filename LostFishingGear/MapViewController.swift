@@ -56,55 +56,31 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 print("---------------------------------")
                 
                 // use SwiftyJSON
-                for (key,subJson):(String, JSON) in json {
+                for (index,subJson):(String, JSON) in json {
                     
-                    
-//                    let x = subJson["latitude"]
-//                    print(x)
-          
-//                    let latitude = subJson["latitude"]
-//                    print(latitude)
-//
-//                    
-//                    let longitude = subJson["longitude"]
-//                    print(longitude)
-//
-//                    //pinpointing every location on a map
-//                    
-//                    let coordinate = CLLocationCoordinate2DMake(Double(latitude), Double(longitude))
-//
-//                    let annotation = MKPointAnnotation()
-////                    annotation.coordinate = coordinate
-//                    print("---------------------------------")
-//                    print(coordinate)
-
-//                    annotation.subtitle = description2
-//                    annotation.title = trailName2
-
-//                    self.mapView.addAnnotation(annotation)
-//                    self.mapView.setRegion(self.mapRegion!, animated: true)
-                    //end pinpointing every location on a map
-                    
-//                    if key == "latitude"{
-//                        for i in 0...subJson.count{
-//                            print("------------")
-//                            //                        var thumbnail = subJson[i]["activities"][0]["thumbnail"].stringValue
-//                            //                        var state = subJson[i]["state"].stringValue
-//                            //                        var lat = subJson[i]["lat"].stringValue
-//                            //                        var lon = subJson[i]["lon"].stringValue
-//                            //                        print(state)
-//                            //                            print(lat)
-//                            //                            print(lon)
-//                        }
-//                        //                        let date = subJson[11]["dt_txt"].stringValue
-//                        //                        let temp = subJson[11]["main"]["temp"]
-//                        //                        let weather = subJson[11]["weather"][0]["description"].stringValue
-//                        //                        print(date)
-//                        //                        print(temp)
-//                        //                        print(weather)
-//                    }
-                    //
-                    //
+                    if let latitude = subJson["latitude"].double{
+                        
+                        let latitude = subJson["latitude"].double
+                        print(latitude)
+                        
+                        let longitude = subJson["longitude"].double
+                        print(longitude)
+                        
+                        //pinpointing every location on a map
+                        let coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
+                        print("*****")
+                        print(coordinate)
+                        
+                        let annotation = MKPointAnnotation()
+                        annotation.coordinate = coordinate
+                        
+                        self.mapView.addAnnotation(annotation)
+                        self.mapView.setRegion(self.mapRegion!, animated: true)
+                        //end pinpointing every location on a map
+                        
+                    } else{
+                        print(subJson["latitude"].error)
+                    }
                     
                 
                 }
